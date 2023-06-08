@@ -6,4 +6,4 @@ class A{
     }
 }
 
-// print 1 to 10 
+
