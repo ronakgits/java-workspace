@@ -5,19 +5,18 @@ public class ReverseOrderOfNumber {
         
         Scanner sc = new Scanner(System.in); 
 
-        int num, m, rev=0; 
+        int number, remainder, reverse=0; 
 
-        System.out.print("Enter Number : ");
-        num = sc.nextInt(); 
+        System.out.print("Enter numberber : ");
+        number = sc.nextInt(); 
 
-        while(num>0)
+        while(number != 0)
         {
-            m = num % 10; 
-            rev = (rev*10) + m; 
-            num = num/10; 
+            remainder = number % 10; 
+            reverse = (reverse*10) + remainder; 
+            number = number/10; 
         }
-        System.out.println("Reverse value is : " + rev);
+        System.out.println("Reverse value is : " + reverse);
 
     }    
 }
-
