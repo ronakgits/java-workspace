@@ -37,6 +37,5 @@ public class SwitchCaseEx1 {
                 System.out.println("INVALID VALUE...");
                 break; 
         }
-
     }    
 }
