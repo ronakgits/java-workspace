@@ -5,22 +5,23 @@ public class SumOfFirstAndLastDigit {
         
         Scanner sc = new Scanner(System.in); 
 
-        int num, lastDigit; 
+        int num, lastDigit, firstDigit; 
 
         System.out.print("Enter Number : ");
         num = sc.nextInt(); 
 
+        // find first digit
+        firstDigit = num; 
+        while(firstDigit >= 10){
+            firstDigit = firstDigit/10; 
+        }
+
         // find last digit 
         lastDigit = num % 10; 
 
-        // find first digit
-        while(num >= 10){
-            num = num/10; 
-        }
-
-        System.out.println("First Digit : " + num);
+        System.out.println("First Digit : " + firstDigit);
         System.out.println("Last Digit : " + lastDigit);
-        System.out.println("Sum : " + (num + lastDigit));
+        System.out.println("Sum : " + (firstDigit + lastDigit));
 
     }
 }
