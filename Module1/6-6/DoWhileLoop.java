@@ -1,4 +1,4 @@
-public class C {
+public class DoWhileLoop {
     
     public static void main(String[] args) {
         
