@@ -5,12 +5,9 @@ public class C {
         int i = 100; 
 
         do{
-
             System.out.println(i);
             i--; 
-
         }while(i>=81);
-        // }while(81 <= i);
     }
 }
 
