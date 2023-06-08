@@ -10,4 +10,3 @@ public class B {
     }
 }
 
-// print 51 to 60 
