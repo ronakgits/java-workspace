@@ -1,9 +1,4 @@
 
-1. FindLargestOfThreeNum.java
-
-Write a Java program to Take three numbers from the user and print the greatest number. 
-
-
 2. 
 
 Write a Java program that takes the user 
@@ -15,29 +10,5 @@ If the user input is not a letter
 (between a and z or A and Z), 
 or is a string of length > 1, 
 print an error message. 
-
-
-6. Pyramid1.java 
-
-  Write a program in Java to display the pattern like right angle triangle with a number.
-  1
-  1 2
-  1 2 3
-  1 2 3 4
-  1 2 3 4 5
-
-
-7. Pyramid2.java
-
-  Write a program in Java to make such a pattern like right angle triangle 
-  with number increased by 1 The pattern like:
-  
-  1
-  2 3
-  4 5 6
-  7 8 9 10
-
-
-
 
 
