@@ -9,6 +9,6 @@ public class CountNumberOfDigits {
 			++count; 
 		}
 		
-		System.out.println("Number of digits: " + count);
+		System.out.println(" Number of digits in the number: " + count);
 	}
 }
