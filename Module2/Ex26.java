@@ -18,7 +18,7 @@ public class Triangle {
 	public double getArea() {
 
 		double s = getPerimeter() / 2;
-    // Heron's formula.
+    		// Heron's formula.
 		return Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
 	}
 
