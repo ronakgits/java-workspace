@@ -115,7 +115,6 @@ public class Calculator {
 			 	double n1 = Double.parseDouble(t1.getText()); 
 			 	double n2 = Double.parseDouble(t2.getText()); 
 
-//			 	Double division = n1 / n2; 	
 			 	Double modulo = n1 % n2; 	
 			 	
 			 	ldisplay_value.setText("Result is: " + modulo);			}
