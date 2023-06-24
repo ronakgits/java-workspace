@@ -13,7 +13,7 @@ public class Calculator {
 	JFrame frame; 
 	JLabel l1, l2, ldisplay_value;
 	JTextField t1, t2;
-	JButton btnAddition, btnSubtraction;
+	JButton btnAddition, btnSubtraction, btnMultiplication, btnDivision, btnModulo;
 	
 	// Constructor 
 	public Calculator() {
@@ -28,7 +28,7 @@ public class Calculator {
 		l2.setBounds(33, 150, 126, 25);
 		
 		ldisplay_value = new JLabel("Result is: " ); 
-		ldisplay_value.setBounds(33, 224, 248, 51);
+		ldisplay_value.setBounds(33, 224, 173, 51);
 		
 		
 		t1 = new JTextField();
@@ -55,9 +55,7 @@ public class Calculator {
 			 	
 			 	ldisplay_value.setText("Result is: " + addition);
 			 	
-			 
-			}
-			  
+			 }
 		}); 
 		
 		btnSubtraction = new JButton("-");
@@ -71,12 +69,57 @@ public class Calculator {
 			 	double n1 = Double.parseDouble(t1.getText()); 
 			 	double n2 = Double.parseDouble(t2.getText()); 
 
-			 	Double addition = n1 - n2; 
+			 	Double subtraction = n1 - n2; 
 			 	
-			 	ldisplay_value.setText("Result is: " + addition);
+			 	ldisplay_value.setText("Result is: " + subtraction);
 			}
 			  
 		}); 
+		
+		btnMultiplication = new JButton("x");
+		btnMultiplication.setBounds(235, 318, 77, 51);
+		
+		btnMultiplication.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+			 	double n1 = Double.parseDouble(t1.getText()); 
+			 	double n2 = Double.parseDouble(t2.getText()); 
+
+			 	Double multiplication = n1 * n2; 
+			 	
+			 	ldisplay_value.setText("Result is: " + multiplication);
+			}
+		});
+
+		btnDivision = new JButton("/");
+		btnDivision.setBounds(235, 256, 77, 51);
+		
+		btnDivision.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+			 	double n1 = Double.parseDouble(t1.getText()); 
+			 	double n2 = Double.parseDouble(t2.getText()); 
+
+			 	Double division = n1 / n2; 	
+			 	
+			 	ldisplay_value.setText("Result is: " + division);
+			}
+		});
+		
+		btnModulo = new JButton("%");
+		btnModulo.setBounds(235, 198, 77, 51);
+		
+		btnModulo.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+			 	double n1 = Double.parseDouble(t1.getText()); 
+			 	double n2 = Double.parseDouble(t2.getText()); 
+
+//			 	Double division = n1 / n2; 	
+			 	Double modulo = n1 % n2; 	
+			 	
+			 	ldisplay_value.setText("Result is: " + modulo);			}
+		});
 		
 		
 		frame.getContentPane().add(l1); 
@@ -84,13 +127,20 @@ public class Calculator {
 
 		frame.getContentPane().add(t1); 
 		frame.getContentPane().add(t2);
+		
 		frame.getContentPane().add(ldisplay_value); 
+		
 		
 		frame.getContentPane().add(btnAddition);
 		frame.getContentPane().add(btnSubtraction);
+		frame.getContentPane().add(btnMultiplication);
+		frame.getContentPane().add(btnDivision); 
+		frame.getContentPane().add(btnModulo); 
+		
 		
 		frame.setSize(338,543);	
 		frame.getContentPane().setLayout(null);
+		
 		frame.setVisible(true);
 		frame.setLocationRelativeTo(null);
 	}
@@ -99,5 +149,4 @@ public class Calculator {
 		// call Constructor 
 		new Calculator(); 
 	}
-	
 }
