@@ -1,6 +1,12 @@
 // Student Register Form 
+package srf;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 
 import java.awt.Font; 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -10,7 +16,8 @@ import javax.swing.ButtonGroup;
 import javax.swing.JPasswordField;
 import javax.swing.JComboBox;
 import javax.swing.JButton;
-//import javax.swing.JOptionPane;
+import javax.swing.JOptionPane;
+
 
 public class Main {
 	
@@ -18,11 +25,11 @@ public class Main {
 	
 	JLabel ltitle, lname,lgender,lemail,lPhno, lpwd, lconfirmpwd, lcourses, lbranch, lsemester;
 	
-	JTextField tname, tgender, temail, tPhno, tpwd, tconfirmpwd;
+	JTextField tname, tgender, temail, tPhno;
 	
 	JRadioButton rb1, rb2;
 	
-	JPasswordField tpass,tconfirmpass;
+	JPasswordField tpwd, tconfirmpwd;
 	
 	JComboBox<String>combo;
 	String courses[]= {"ME/M Tect","BCA","MCA"};
@@ -38,6 +45,8 @@ public class Main {
 	public Main() {
 		
 		frame = new JFrame("Student Register Form");
+		
+		// JLabels 
 		
 		ltitle = new JLabel("Register a new Student"); 
 		ltitle.setBounds(10, 26, 436, 35);
@@ -80,7 +89,8 @@ public class Main {
 		lsemester.setBounds(60, 500, 105, 30);
 		lsemester.setFont(new Font("Times New Roman", Font.PLAIN, 15));
 		
-//		
+		
+		// JTextFields
 				
 		tname = new JTextField();
 		tname.setBounds(147, 109, 186, 24);
@@ -103,10 +113,10 @@ public class Main {
 		tPhno = new JTextField();
 		tPhno.setBounds(147, 268, 186, 24); 
 				
-		tpwd = new JTextField();
+		tpwd = new JPasswordField();
 		tpwd.setBounds(147, 316, 186, 24); 
 		
-		tconfirmpwd = new JTextField();
+		tconfirmpwd = new JPasswordField();
 		tconfirmpwd.setBounds(147, 363, 186, 24); 
 		
 		combo = new JComboBox<>(courses);
@@ -118,40 +128,101 @@ public class Main {
 		combo2 = new JComboBox<>(semester);
 		combo2.setBounds(147, 505, 197, 23);
 
+		
 		btnRegister = new JButton("Register");
 		btnRegister.setBounds(187,549,105,35);
 		
-		
-		frame.getContentPane().add(ltitle);
-		frame.getContentPane().add(lname);
-		frame.getContentPane().add(lgender);
-		frame.getContentPane().add(lemail);
-		frame.getContentPane().add(lPhno); 
-		frame.getContentPane().add(lpwd);
-		frame.getContentPane().add(lconfirmpwd);
-		frame.getContentPane().add(lcourses); 
-		frame.getContentPane().add(lbranch);
-		frame.getContentPane().add(lsemester); 
+		btnRegister.addActionListener(new ActionListener() {
 
-		frame.getContentPane().add(tname);
-		frame.getContentPane().add(rb1);
-		frame.getContentPane().add(rb2);
-		frame.getContentPane().add(temail);
-		frame.getContentPane().add(tPhno);
-		frame.getContentPane().add(tpwd);	
-		frame.getContentPane().add(tconfirmpwd);
-		frame.getContentPane().add(combo);
-		frame.getContentPane().add(combo1);
-		frame.getContentPane().add(combo2); 
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				
+				String name = tname.getText().toString(); 
+//				String gender = tgender.getText().toString();
+				String email = temail.getText().toString();
+				String phno = tPhno.getText().toString();
+				String pwd = tpwd.getText().toString();
+				String confirmpwd = tconfirmpwd.getText().toString();
+				String courses = combo.getItemAt(combo.getSelectedIndex());
+				String branch = combo1.getItemAt(combo.getSelectedIndex());
+				String semester = combo2.getItemAt(combo.getSelectedIndex());
+				
+				
+				if(pwd.equals(confirmpwd))
+				{
+					String name1 = "\n\t Your Name is: ";
+					String gender1 = "\n Gender is: ";
+					String email1 = "\n Your Email is: ";
+					String phno1 = "\n Phone No: ";
+					String pwd1 = "\n Your Password is: ";
+					String courses1 = "\n Course: ";
+					String branch1 = "\n Branch: ";
+					String semester1 = "\n Semester: ";
+					
+					try 
+					{
+						FileOutputStream fout = new FileOutputStream("G://ronak.txt");
+						
+						fout.write(name1.getBytes());
+						fout.write(name.getBytes());
+						fout.write(gender1.getBytes());
+//						fout.write(gender.getBytes());
+						fout.write(email1.getBytes());
+						fout.write(email.getBytes());
+						fout.write(phno1.getBytes());
+						fout.write(phno.getBytes());
+						fout.write(pwd1.getBytes());
+						fout.write(pwd.getBytes());
+						fout.write(courses1.getBytes());
+						fout.write(courses.getBytes());
+						fout.write(branch1.getBytes());
+						fout.write(branch.getBytes());
+						fout.write(semester1.getBytes());
+						fout.write(semester.getBytes());
+					} 
+					catch (Exception e1) 
+					{
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+					System.out.println("Success");
+				}
+				else
+				{
+					JOptionPane.showMessageDialog(frame, " Your Password and Confirm Password are not same ");
+				}
+			}
+			
+		});
 		
+		frame.add(ltitle);
+		frame.add(lname);
+		frame.add(lgender);
+		frame.add(lemail);
+		frame.add(lPhno); 
+		frame.add(lpwd);
+		frame.add(lconfirmpwd);
+		frame.add(lcourses); 
+		frame.add(lbranch);
+		frame.add(lsemester); 
 
-		frame.getContentPane().add(btnRegister);
+		frame.add(tname);
+		frame.add(rb1);
+		frame.add(rb2);
+		frame.add(temail);
+		frame.add(tPhno);
+		frame.add(tpwd);
+		frame.add(tconfirmpwd);
+		frame.add(combo);
+		frame.add(combo1);
+		frame.add(combo2); 
+		frame.add(btnRegister);
 		
 		frame.setSize(472,650);
-		frame.getContentPane().setLayout(null);
+		frame.setLayout(null);
 		frame.setLocationRelativeTo(null);
 		frame.setVisible(true);
-		
 	}
 	
 	public static void main(String[] args) {
