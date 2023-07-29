@@ -1,0 +1,178 @@
+
+Page - 5
+
+
+- Ex. 34
+
+	
+	Create a class named 'Shape' 
+	with a method to print "This is this is shape". 
+	
+	Then create two other classes named 'Rectangle', 'Circle' 
+	
+	inheriting the Shape class, 
+	both having a method 
+	
+	to print "This is rectangular shape" 
+	and 
+	"This is circular shape" respectively. 
+	
+	Create a subclass 'Square' of 'Rectangle' 
+	
+	having a method 
+	to print "Square is a rectangle". 
+	
+	Now call the method of 'Shape' and 'Rectangle' class 
+	
+	by the object of 'Square' class.
+	
+
+
+
+- Ex. 35
+
+	
+	W.A.J.P 
+	to demonstrate try catch block,
+	
+
+
+
+- Ex. 36
+	
+	
+	Take two numbers from the user 
+	and 
+	perform the 
+	division operation 
+	and 
+	handle Arithmetic Exception. 
+	
+	O/P- 
+	Enter two numbers: 10 0
+
+	Exception in thread main java.lang.ArithmeticException:/ by zero
+	
+
+
+
+- Ex. 37
+
+	
+	W.A.J.P 
+	to demonstrate multiple catch blocks, 
+	one is to handle 
+	divide by zero exception 
+	and 
+	another one is to handle
+
+	ArrayIndexOutOfBoundException 
+	int a [] = new int [5]; 
+	a [5] = 30/0;
+	
+
+
+
+- Ex. 38
+
+	
+	W.A.J.P 
+	to implement the above program 
+	using nesting of 
+	try-catch block. 
+
+	{
+	W.A.J.P 
+	to
+	using nesting of 
+	try-catch block 
+	one is to handle 
+	divide by zero exception 
+	and 
+	another one is to handle
+
+	ArrayIndexOutOfBoundException 
+	int a [] = new int [5]; 
+	a [5] = 30/0;
+	}
+	
+	java
+	try 
+	{
+		try
+		{
+			//code
+		}
+		catch (Exception e)
+		{
+			//code
+		}
+	}
+	catch (Exception e)
+	{
+		//code
+	}
+	
+
+
+
+- Ex. 39
+
+	
+	W.A.J.P 
+	to demonstrate try catch block, 
+	
+	take two numbers from the user 
+	by Command line argument 
+	and 
+	perform the division operation and handle Arithmetic
+
+	Output:
+	Exception in thread main java. Lang. Arithmetic Exception:/ by zero
+	
+
+
+
+- Ex. 40
+
+	
+	W.A.J.P 
+	to create the 
+	validate method 
+	that takes integer value as a parameter. 
+	
+	If the age is less than 18, 
+	then throw an Arithmetic Exception 
+	otherwise 
+	print a message 
+	welcome to vote.
+	
+	O/P- 
+	Enter your age: 16
+	Exception in thread main java. Lang. Arithmetic Exception: not valid
+	
+
+
+
+- Ex. 41
+
+	
+	W.A.J.P 
+	to create a custom exception 
+	
+	if Customer withdraw amount 
+	
+	which is greater than account balance 
+	
+	then program will show custom exception 
+	otherwise 
+	amount will deduct from account balance. 
+	
+	O/P:
+
+	Account balance is: 2000 
+	Enter withdraw amount: 2500
+
+	Sorry, insufficient balance, you need more 500 Rs. 
+	To perform this transaction.
+	

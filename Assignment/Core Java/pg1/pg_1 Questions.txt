@@ -1,0 +1,101 @@
+
+Page - 1
+
+
+- Ex. 01
+
+	
+	Find Largest Of Three Number
+
+	WAJP to 
+	Take three numbers from the user 
+	and print the greatest number. 
+	
+
+- Ex. 02 
+
+	
+	Print Vowel Or Consonant
+
+	W.A.J.P 
+	that `takes the user` 
+	to provide a `single character` from the `alphabet`.
+	Print Vowel or Consonant, 
+	depending on the user input. 
+
+	{
+		If 
+		the user input is `not a letter` 
+		(between a and z or A and Z),
+		or
+		is a string of `length > 1`, 
+		print an `ERROR` message.
+	}
+	
+
+
+
+- Ex. 03
+
+	
+	W.A.J.P 
+	that takes a year from user 
+	and 
+	print whether that year is a 
+	leap year or not. 
+	
+	
+
+- Ex. 04
+
+	
+	WAJP 
+	
+	to display 
+	the first 10 natural numbers 
+	using while loop. 
+	
+
+
+- Ex. 05
+
+	
+	WAJP
+	
+	to input 5 numbers from keyboard 
+	and 
+	find their sum and average 
+	using for loop.
+	
+
+
+- Ex. 06
+
+	
+	WAJP 
+	
+	to display the pattern 
+	like right angle triangle with a number.
+
+	1 
+	1 2
+	1 2 3
+	1 2 3 4
+	1 2 3 4 5
+	
+
+
+- Ex. 07 
+
+	
+	WAJP 
+	
+	to make such a pattern like 
+	right angle triangle with number 
+	increased by 1 The pattern like:
+
+	1
+	2 3
+	4 5 6
+	7 8 9 10
+	
