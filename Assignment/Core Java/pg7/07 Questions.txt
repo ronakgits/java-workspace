@@ -1,0 +1,138 @@
+
+Page - 7
+
+
+- Ex. 60
+
+    
+    Write a Java program to iterate through all elements in a hash list.
+    
+
+
+
+- Ex. 61
+
+    
+    Write a Java program to get the number of elements in a hash set.
+    
+
+
+
+- Ex. 62
+
+    
+    Write a Java program to associate the specified value with the specified key in a Hash Map.
+    
+
+
+
+- Ex. 63
+
+    
+    Write a Java program to count the number of key-value (size) mappings in a map.
+    
+
+
+
+- Ex. 64
+
+    
+    Write a Java program to reverse elements in an array list.
+    
+
+
+
+- Ex. 65
+
+    
+    Write a Java program to extract a portion of an array list.
+    
+
+
+
+- Ex. 66
+
+    
+    Write a Java program to compare two array lists.
+    
+
+
+
+- Ex. 67
+
+    
+    Write a Java program of swap two elements in an array list.
+    
+
+
+
+- Ex. 68
+
+    
+    Write a Java program to join two array lists.
+    
+
+
+
+- Ex. 69
+
+    
+    Write a Java program to convert a hash set to an array.
+    
+
+
+
+- Ex. 70
+
+    
+    Write a Java program to convert a hash set to a List/Array List.
+    
+
+
+
+- Ex. 71
+
+    
+    Write a Java program to check whether a map contains key-value mappings (empty) or not.
+    
+
+
+
+- Ex. 72
+
+    
+    Write a Java program to increase the size of an array list.
+    
+
+
+
+- Ex. 73
+
+    
+    Write a Java program to replace the second element of an Array List with the specified element.
+    
+
+
+
+- Ex. 74
+
+    
+    Write a Java program to print all the elements of an Array List using the position of the elements.
+    
+
+
+
+- Ex. 75
+
+    
+    Write a Java program to compare two sets and retain elements which are same on both sets.
+    
+
+
+
+- Ex. 76
+
+    
+    Write a Java program to get a collection view of the values contained in this map.
+    
+

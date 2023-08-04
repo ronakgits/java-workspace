@@ -1,0 +1,188 @@
+
+Page - 6
+
+- Ex. 43
+
+	
+	W.A.J.P 
+	to create a class Student 
+	
+	with attributes 
+	roll no, name, age and course. 
+	
+	Initialize values through parameterized constructor. 
+	
+	If 
+		age of student is not in between 15 and 21 
+		then 
+		generate user defined exception "AgeNotWithinRangeException". 
+	
+	If name contains numbers or special symbols 
+		
+		raise exception "NameNotValidException". Define the two exception classes.
+	
+
+
+
+- Ex. 44
+
+	
+	W.A.J. P to create one thread by implementing Runnable interface in Class.
+	
+
+
+
+- Ex. 45
+
+	
+	W.A.J. P to create one thread by extending Thread class in another Class.
+	
+
+
+
+- Ex. 46
+
+	
+	W.A.J.P to create 2 threads and execute that threads by providing sleep time as 2000ms and check the execution.
+	
+
+
+
+
+- Ex. 47
+
+	
+	W.A.J.P to 
+	start the same Thread twice by calling start () method twice. 
+	
+	Test ThreadTwice1 t1 = new TestThreadTwice1(); 
+	
+	t1.start (); 
+	t1.start ();
+	
+
+
+
+- Ex. 48
+
+	
+	W.A.J.P 
+	to create 2 threads 
+	and 
+	make one thread as 
+	Daemon Thread by using set Daemon() method 
+	of Thread class 
+	and 
+	check whether the thread is set daemon 
+	or 
+	not by using is Daemon() method.
+
+    TestDaemonThread2 t1 = new TestDaemonThread2();
+    TestDaemonThread2 t2 = new TestDaemonThread2(); 
+	
+	t1.start();
+    t1.setDaemon(true);	// will throw exception here 
+	t2.start();
+	
+
+
+
+- Ex. 49
+
+	
+    Write a Java program 
+	to create a new array list, 
+	add some colors (string) and print out the collection.
+	
+
+
+
+
+- Ex. 50
+
+    
+	Write a Java program 
+	to iterate through all elements in an array list.
+    
+
+
+
+- Ex. 51
+
+    
+	Write a Java program 
+	to insert an element into the array list at the first position.
+    
+
+
+
+- Ex. 52
+
+    
+	Write a Java program 
+	to retrieve an element (at a specified index) from a given array list.
+    
+
+
+
+- Ex. 53
+
+    
+	Write a Java program 
+	to update specific array element by given element.
+    
+
+
+
+- Ex. 54
+
+    
+	Write a Java program 
+	to remove the third element from an array list.
+    
+
+
+
+- Ex. 55
+
+    
+	Write a Java program 
+	to search an element in an array list.
+    
+
+
+
+- Ex. 56
+
+    
+	Write a Java program 
+	to sort a given array list.
+    
+
+
+
+- Ex. 57
+
+    
+	Write a Java program 
+	to copy one array list into another.
+    
+
+
+
+- Ex. 58
+
+    
+	Write a Java program 
+	to shuffle elements in an array list.
+    
+
+
+
+- Ex. 59
+
+    
+	Write a Java program 
+	to append the specified element 
+	to the end of a hash set.
+    
