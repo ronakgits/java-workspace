@@ -1,7 +1,7 @@
 
 ## Core Java Assessment Test
 
-Write a java program to demonstrate the console based inventory management system. Prepare demonstration of console based crud operations with student management system under software development principles
+Write a java program to demonstrate the console based `inventory management system`. Prepare demonstration of console based crud operations with student management system under software development principles
 
 Execution of the code following menu must be displayed.
 
