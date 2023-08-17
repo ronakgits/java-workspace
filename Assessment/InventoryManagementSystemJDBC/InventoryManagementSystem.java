@@ -4,7 +4,7 @@ import java.sql.*;
 public class InventoryManagementSystem {
 
     private static final String host = "jdbc:mysql://localhost:3306/";
-    private static final String db_name = "inventory_management_system";
+    private static final String db_name = "products";
 
     private static final String db_url = host + db_name;
     private static final String db_user_name = "root";
